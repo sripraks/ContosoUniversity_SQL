@@ -9,6 +9,11 @@ namespace ContosoUniversity.Data
         {
         }
 
+        //public SchoolContext(DbContextOptions<SchoolContext> options) : base(options)
+        //{
+
+        //    AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+        //}
         public DbSet<Course> Courses { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
         public DbSet<Student> Students { get; set; }

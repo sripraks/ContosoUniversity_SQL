@@ -17,6 +17,9 @@ namespace ContosoUniversity_SQL
             builder.Services.AddDbContext<SchoolContext>(options =>
                 options.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=ContosoUniversity1;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true"));
 
+    //        builder.Services.AddDbContext<SchoolContext>(options =>
+    //options.UseNpgsql("Host = localhost:5432; Database = ContosoUniversity1; Username = postgres; Password = Test123$"));
+
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
             var app = builder.Build();
